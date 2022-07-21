@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raava System</title>
+    <!--BootStrap v5.2-->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="manifest.json">
+    <link rel="shortcut icon" type="image/png" href="sources/icons/favicon.png">
+    <link rel="apple-touch-icon" href="sources/icons/96px.png">
+    <link rel="apple-touch-startup-image" href="sources/icons/96px.png">
+    <link rel="manifest" href="manifest.json">
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!--MAIN CONTAINER-->
+    <div class="main-container d-flex">
+      <div class="sidebar" id="side_nav">
+        <div class="header-box">
+
+                <div class="d-flex flex-row-reverse justify-content-between">
+                    <div class="p-2">
+                        <button class="btn d-md-none d-block close-btn" type="button">
+                            <i class="bi bi-x-lg bootstrap-icons"></i>
+                          </button>
+                          <span class="mx-4"></span>
+                    </div>
+                    <div class="p-2 align-self-center">
+                        <ul class="list-unstyled">
+                            <li>          
+                                <center><img src="sources/icons/logo-sm.png" alt="" class="img-fluid"></center>
+                            </li>
+                            <li>
+                                <center><h5 class="text-black">Raava Technology</h5></center>
+                           </li>
+                        </ul>
+                    </div>
+                    <div class="p-2">
+                        <span class="mx-4"></span>
+                    </div>
+                </div>
+
+                <!--Seccion de bajo del nombre en barra de navegacion-->
+                <div class="d-flex flex-row-reverse justify-content-center">
+                    <div>
+                        <button type="button" class="btn">
+                            <i class="bi bi-box-arrow-right panel-element"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn">
+                            <i class="bi bi-bell panel-element"></i>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="btn">
+                            <i class="bi bi-gear panel-element"></i>
+                        </button>
+                    </div>
+                </div>
+                <!--/. fin seccion-->
+        </div>
+
+        <hr class="h-color mx-2" />
+
+        <ul class="list-unstyled px-3">
+          <li class="nav-item active">
+            <a class="text-decoration-none px-3 py-2 d-block" href="#">
+              <i class="bi bi-speedometer2"></i>
+              DashBoard
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="text-decoration-none px-3 py-2 d-block" href="#">
+              <i class="bi bi-list-task"></i>
+              Tareas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="text-decoration-none d-flex justify-content-between px-3 py-2 d-block"
+              href="#"
+            >
+              <span><i class="bi bi-chat"></i> Mensajes</span>
+              <span class="rounded badge bg-primary px-2">06</span>
+            </a>
+          </li>
+        </ul>
+        <hr class="h-color mx-2" />
+        <ul class="list-unstyled px-3">
+          <li class="nav-item">
+            <a class="text-decoration-none d-flex px-3 py-2 d-block" href="#">
+            <i class="bi bi-sliders"></i>
+             Ajustes
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="content">
+        <!--.CONTENT-->
+        <nav class="navbar navbar-expand-lg bg-light mx-1">
+          <div class="container-fluid">
+            <div class="d-md-none">
+              <button class="btn open-btn" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+
+            <div class="d-md-none">
+              <img
+                src="sources/icons/logo-sm.png"
+                class="img-fluid d-block mx-auto"
+                alt="logotipo Raava Technology"
+              />
+            </div>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Dropdown link
+                  </a> 
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="dashboard-content px-3 pt-4">
+          <h2 class="fs-5">DashBoard</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+            nam nihil voluptatibus? Excepturi cumque, alias voluptate,
+            aspernatur similique adipisci asperiores vitae porro voluptatum nam
+            sed perferendis earum rem dolore velit.
+          </p>
+        </div>
+      </div>
+      <!--/.CONTENT-->
+    </div>
+    <!--/.MAIN CONTAINER-->
+    
+    <!--Popper-->
+    <script src="node_modules/@popperjs\core/dist/umd/popper.js"></script>
+    <!--JS BootsTrap v5.2-->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!--Registro de SW-->
+    <script src="reg_sw.js"></script>
+    <!--Json V3.6.0-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!--BootStrap ToolTip-->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script>
+      $(".sidebar ul li").on("click", function () {
+        $(".sidebar ul li.active").removeClass("active");
+        $(this).addClass("active");
+      });
+
+      $(".open-btn").on("click", function () {
+        $(".sidebar").toggleClass("active");
+      });
+
+      $(".close-btn").on("click", function () {
+        $(".sidebar").removeClass("active");
+      });
+    </script>
+  </body>
+</html>
